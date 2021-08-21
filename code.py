@@ -13,9 +13,17 @@ import shlex
 #Inputs
 n = np.array([1,-2]) 
 c = 4
-e1 = np.array([4,0]) 
+e1 = np.array([0,2]) 
+e2 = np.array([4,0]) 
+e3 = np.array([2,0]) 
+e4 = np.array([0,1]) 
+e5 = np.array([1,1]) 
 
 A = c*e1/(n@e1)
+B = c*e2/(n@e2)
+C = c*e3/(n@e3)
+D = c*e4/(n@e4)
+E = c*e5/(n@e5)
 
 
 def line_gen(A,B):
