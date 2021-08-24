@@ -8,15 +8,20 @@ import subprocess
 import shlex
 #end if
 
-
+# import the math module 
+import math 
+  
+# print the square root of 0
+print(math.sqrt(0)) 
 
 #Inputs
 n = np.array([1,-2]) 
 c = 4
+
 e1 = np.array([0,2]) 
 e2 = np.array([4,0]) 
 e3 = np.array([2,0]) 
-e4 = np.array([0,1]) 
+e4 = np.array([np.sqrt(2),4*np.sqrt(2)]) 
 e5 = np.array([1,1]) 
 
 A = c*e1/(n@e1)
