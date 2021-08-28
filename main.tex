@@ -134,13 +134,13 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from
 \begin{lstlisting}
-https://github.com/Vallidevibolla/Assignment-4/new/main
+https://github.com/Vallidevibolla/Assignment-4/blob/main/code.py
 \end{lstlisting}
 %
 and latex-tikz codes from
 %
 \begin{lstlisting}
-https://github.com/Vallidevibolla/Assignment-4/new/main
+https://github.com/Vallidevibolla/Assignment-4/blob/main/main.tex
 \end{lstlisting}
 %
 Question taken from
@@ -156,43 +156,51 @@ Check which of the following are solutions of the equation
 \end{align}
 \section{Solution}
 Given 
+\begin{align}
 \myvec{1&-2}\vec{x}=4\\
+Let 
+\vec{A}=\myvec{0\\2}\label{eq:1} \\
+\vec{B}=\myvec{4\\0}\label{eq:2} \\
+\vec{C}=\myvec{2\\0} \label{eq:3}\\
+\vec{D}=\myvec{\sqrt{2}\\4\sqrt{2}}\label{eq:4} \\
+\vec{E}=\myvec{1\\1}\label{eq:5}
+\end{align}
 Let '\vec{y}' be the solution then equation be 
-\begin{equation} \label{eq:1}
+\begin{equation} \label{eq:6}
 \boxed{\vec{y}=\myvec{1&-2}\vec{x}}
 \end{equation}
-\textbf{Substitute}
+\textbf{Substitute}\eqref{eq:1}in \eqref{eq:6}
 \begin{align}
- \vec{x}=\myvec{0\\2}\text{in} \eqref{eq:1}\\
+ \vec{x}=\myvec{0\\2}\text{in} \eqref{eq:6}\\
           \vec{y}=\myvec{1&-2}\myvec{0\\2}\\
           \boxed{\vec{y}=-4}
 \end{align}
-\textbf{Substitute }
+\textbf{Substitute }\eqref{eq:2}in \eqref{eq:6}
 \begin{align}
-\vec{x}=\myvec{4\\0}\text{in} \eqref{eq:1}\\
+\vec{x}=\myvec{4\\0}\text{in} \eqref{eq:6}\\
           \vec{y}=\myvec{1&-2}\myvec{4\\0}\\
           \boxed{\vec{y}=4}
 \end{align}
-\textbf{Substitute}
+\textbf{Substitute}\eqref{eq:3}in \eqref{eq:6}
 \begin{align}
- \vec{x}=\myvec{2\\0}\text{in} \eqref{eq:1}\\
+ \vec{x}=\myvec{2\\0}\text{in} \eqref{eq:6}\\
           \vec{y}=\myvec{1&-2}\myvec{2\\0}\\
           \boxed{\vec{y}=2}   
 \end{align}
-\textbf{Substitute}
+\textbf{Substitute}\eqref{eq:4}in \eqref{eq:6}
 \begin{align}
-\vec{x}=\myvec{\sqrt{2}\\4\sqrt{2}}\text{in} \eqref{eq:1}\\
+\vec{x}=\myvec{\sqrt{2}\\4\sqrt{2}}\text{in} \eqref{eq:6}\\
           \vec{y}=\myvec{1&-2}\myvec{\sqrt{2}\\4\sqrt{2}}\\
           \boxed{\vec{y}=-7\sqrt{2}}    
 \end{align}
-\textbf{Substitute} 
+\textbf{Substitute} \eqref{eq:5}in \eqref{eq:6}
 \begin{align}
-\vec{x}=\myvec{1\\1}\text{in} \eqref{eq:1}\\
+\vec{x}=\myvec{1\\1}\text{in} \eqref{eq:6}\\
           \vec{y}=\myvec{1&-2}\myvec{1\\1}\\
           \boxed{\vec{y}=-1}
 \end{align}
 $\therefore$ 
-\vec{x}=\myvec{4\\0} is the solution of the equation \myvec{1&-2}\vec{x}=4
+\vec{x}=\myvec{4\\0} i.e.,Point \vec{B} is the solution of the equation \myvec{1&-2}\vec{x}=4
 
 \numberwithin{figure}{section}
 \begin{figure}[h]
